@@ -15,3 +15,32 @@ raspberry pi4を用いたカラス撃退装置です。
 4. カメラを有効にしてOKボタンを押す
 ![setting_1](https://github.com/merry1147/CrowBuster/blob/main/img/setting2.png)
 5. 再起動を要求されるので再起動する
+
+## セットアップ
+Raspberry Pi4における本アプリケーションのセットアップ手順を説明する。
+
+1. Raspberry Pi4にRaspberryPi OSをインストールする  
+64bit版OSのインストールを推奨します。
+
+2. LXTerminalを開き、以下のコマンドを実行する
+```
+sudo apt update
+sudo apt upgrade -y
+sudo apt install python3-tk python3-pil.imagetk -y
+sudo apt install libatlas-base-dev -y
+```
+3. pip3を最新版にアップデートする
+```
+sudo pip3 install --upgrade pip
+```
+4. requirements.txtに書かれているライブラリをインストールする
+```
+pip3 install -r "requirements.txt"
+```
+6. アプリケーションを実行する
+```
+python3 guiapp.py
+```
+
+## デモ
+準備中
