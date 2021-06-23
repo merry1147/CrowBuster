@@ -13,7 +13,7 @@ raspberry pi4を用いたカラス撃退装置です。
 ![setting_1](https://github.com/merry1147/CrowBuster/blob/main/img/setting1.png)
 3. インターフェイスを選択
 4. カメラを有効にしてOKボタンを押す
-![setting_1](https://github.com/merry1147/CrowBuster/blob/main/img/setting2.png)
+![setting_2](https://github.com/merry1147/CrowBuster/blob/main/img/setting2.png)
 5. 再起動を要求されるので再起動する
 
 ## セットアップ
@@ -44,3 +44,4 @@ python3 guiapp.py
 
 ## デモ
 カラス撃退装置実行デモ
+![demo](https://github.com/merry1147/CrowBuster/blob/main/img/demo.gif)
