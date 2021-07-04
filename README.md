@@ -41,7 +41,9 @@ pip3 install -r "requirements.txt"
 ```
 python3 guiapp.py
 ```
-
+##UI
+UIの設定は以下の画像のとおりにできます。
+![demo](https://github.com/merry1147/CrowBuster/blob/main/img/UI.png)
 ## デモ
 カラス撃退装置実行デモ
 
