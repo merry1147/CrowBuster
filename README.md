@@ -10,10 +10,14 @@ raspberry pi4を用いたカラス撃退装置です。
 ## Raspberry Pi Camera Moduleの設定
 1. Raspberry Piのメニューボタンから設定を選択
 2. Raspberry Piの設定を選択
+
 ![setting_1](https://github.com/merry1147/CrowBuster/blob/main/img/setting1.png)
+
 3. インターフェイスを選択
 4. カメラを有効にしてOKボタンを押す
+
 ![setting_2](https://github.com/merry1147/CrowBuster/blob/main/img/setting2.png)
+
 5. 再起動を要求されるので再起動する
 
 ## セットアップ
