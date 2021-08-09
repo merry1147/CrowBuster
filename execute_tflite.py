@@ -11,7 +11,7 @@ import os
 import datetime
 class Execute:
     def __init__(self):
-        self.interpreter = tf.lite.Interpreter("./weights/weights.tflite")
+        self.interpreter = tf.lite.Interpreter("./weights/weights380.tflite")
         self.detected_data = []
         self.before_data = None
         self.preview_frame = None
