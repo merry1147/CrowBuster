@@ -24,7 +24,7 @@ class Execute:
         self.logflag=False
         self.path=glob.glob(os.path.abspath('./sound/*.mp3'))
         
-        self.thing=["cat","crow","nothing"]
+        self.thing=["nothing","crow","nothing"]
 
     def setCameraPreview(self,preview):
         self.preview = preview
