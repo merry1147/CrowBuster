@@ -25,7 +25,6 @@ class ExecuteFrame(tk.Frame):
         self.txtbox.place(anchor=tk.CENTER,x=350,y=520)
         
         self.txtbox.insert(tk.INSERT,self.log)
-        #self.txtbox.insert(1.0,"aaaaaaaaaa\n")
         self.txtbox.configure(state ='disabled')
 
         self.button = tk.Button(self,text="Stop",font=font.Font(size=26),command=self.Stop)
@@ -34,7 +33,6 @@ class ExecuteFrame(tk.Frame):
         self.parent = start_f
         self.model = execute
         self.model.set_exec_f(self)
-        #self.model.set_furniture(self.furniture_frame.furniture_name.get())
         
         self.checker = None
 
@@ -59,16 +57,13 @@ class ExecuteFrame(tk.Frame):
         self.pack()
         config_dict=self.parent.Read_Config()
         self.model.select_sound=(config_dict["sound"].split(","))
-        #print(self.model.select_sound)
         self.model.select_sound.remove("None")
-        #print(self.model.select_sound)
         self.model.stop = False
         self.model.exec_model()
 
     def Stop(self):
         if self.parent.time == "1":
             self.after_cancel(self.afterID)
-        #if self.model != None:
         self.model.stop = True
         self.pack_forget()
         self.parent.pack()
