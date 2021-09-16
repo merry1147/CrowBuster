@@ -13,7 +13,7 @@ import configparser
 class ExecuteFrame(tk.Frame):
     def __init__(self,start_f,master=None,**kwargs):
 
-        file = open('./logger.log','r')
+        file = open('./logger.log','r',encoding='Shift_JIS')
         self.log=file.read()
         file.close()
 
