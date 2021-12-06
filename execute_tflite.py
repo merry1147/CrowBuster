@@ -65,7 +65,14 @@ class Execute:
             self.interpreter.invoke()
             output_data = self.interpreter.get_tensor(output_details[0]['index'])
             #print(output_data)
-            class_id=np.argmax(output_data)
+            
+            if np.argmax(output_data) == 1:
+                if data[1]/np.sum(output_data) > 0.45:
+                    class_id=1
+                else:
+                    class_id=2
+            else:
+                class_id=np.argmax(output_data)
             if self.detect_class.__len__() < 10:
                
                 self.detect_class = np.array([class_id for _ in range(10)])
